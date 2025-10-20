@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Chatbot from './chatbot';
+import { ChevronRight } from 'lucide-react';
 
 
 const HeroSection = () => {
@@ -9,7 +10,7 @@ const HeroSection = () => {
     <section id="home over-flow-hidden">
       <div className="relative mx-auto max-w-6xl  px-3 pb-10 pt-24 md:pb-20 md:pt-36">
         <div>
-          <div className="relative mx-auto w-fit bg-gray-950/5 p-2">
+          <div className="relative mx-auto w-fit bg-green-100 p-2">
             <div
               aria-hidden="true"
               className="absolute left-1 top-1 size-[3px] rounded-full bg-gray-950/20"
@@ -70,8 +71,32 @@ const HeroSection = () => {
             Don't let a slow, outdated, or confusing website be the bottleneck in your growth. We engineer mobile-first, AI-driven platforms that are built for one purpose: to convert your visitors into paying customers. Guaranteed.
           </p>
           <div className="flex items-center justify-center gap-4">
-            <a href='/requestdemo' className=" hover:-translate-y-0.5 hover:scale-105 transition-all ease-in-out duration-300  inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 px-4 py-2 border  bg-gradient-to-t from-[#0dc6ff] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
-              <span>Request Demo</span>
+            <a
+              href='/getstarted'
+              className="
+    bg-green-500  
+    inline-flex items-center   justify-center gap-2 whitespace-nowrap text-sm font-medium
+    transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring
+    disabled:pointer-events-none disabled:opacity-50
+    [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0
+    text-primary-foreground shadow-md  border  hover:bg-green-500/90
+    h-10 px-6 rounded-full group relative overflow-hidden
+  "
+            >
+              <span className="mr-6 transition-opacity duration-300 group-hover:opacity-0">
+                Get Started
+              </span>
+
+              <span
+                className="
+      absolute right-1 top-1 border shadow-inner shadow-white/30  border-green-500/50   bottom-1 rounded-full z-10 flex items-center justify-center
+      w-[22%] transition-all duration-300 bg-black
+      group-hover:w-[calc(100%-0.5rem)] group-active:scale-95
+    "
+                aria-hidden="true"
+              >
+                <ChevronRight className=' ml-0.5 ' />
+              </span>
             </a>
           </div>
         </div>

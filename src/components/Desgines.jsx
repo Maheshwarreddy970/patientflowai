@@ -33,7 +33,7 @@ export default function Desgines({ TemplateDesigns }) {
                     />
                     <div className=" relative border-x flex flex-col gap-6 justify-center  py-10">
                         <div>
-                            <div className="relative mx-auto w-fit bg-gray-950/5 p-2">
+                            <div className="relative mx-auto w-fit bg-green-100 p-2">
                                 <div
                                     aria-hidden="true"
                                     className="absolute left-1 top-1 size-[3px] rounded-full bg-gray-950/20"
@@ -77,7 +77,7 @@ export default function Desgines({ TemplateDesigns }) {
                     TemplateDesigns && TemplateDesigns.length > 0 && (
                         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                             {TemplateDesigns.map((design, index) => (
-                                <a href={design.href} target="_blank" rel="noopener noreferrer"  className="relative group mx-auto w-full  bg-gray-950/5 p-2.5">
+                                <a href={design.href} target="_blank" rel="noopener noreferrer" className="relative group mx-auto w-full  bg-green-100 p-2.5">
                                     <div
                                         aria-hidden="true"
                                         className="absolute left-1 top-1 size-[3px] rounded-full bg-gray-950/20"
@@ -96,9 +96,9 @@ export default function Desgines({ TemplateDesigns }) {
                                     />
                                     <div className="relative flex h-full w-full items-center gap-2  bg-white p-1  shadow-md">
                                         <img src={design.img} alt={`Design ${index + 1}`} className="h-60 w-full  object-cover" />
-                                    <div className=' absolute top-0 left-0 w-full  items-center text-xl hidden group-hover:flex hover:flex transition-all duration-200 ease-in-out   justify-center font-semibold text-white  h-full bg-black/50 z-20  '>
-                                    View Live <Link size={24} strokeWidth={2}  className=' ml-2 '/>
-                                    </div>
+                                        <div className=' absolute top-0 left-0 w-full  items-center text-xl hidden group-hover:flex hover:flex transition-all duration-200 ease-in-out   justify-center font-semibold text-white  h-full bg-black/50 z-20  '>
+                                            View Live <Link size={24} strokeWidth={2} className=' ml-2 ' />
+                                        </div>
                                     </div>
                                 </a>
                             ))}

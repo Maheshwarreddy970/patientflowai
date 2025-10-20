@@ -135,7 +135,7 @@ const Header = () => {
 
                         </Accordion>
                         <div className="my-4 flex  gap-3">
-                            <a
+                          <a
                                 href='/getstarted'
                                 className="
     bg-green-500  
@@ -154,7 +154,7 @@ const Header = () => {
                                 <span
                                     className="
       absolute right-1 top-1 border shadow-inner shadow-white/30  border-green-500/50   bottom-1 rounded-full z-10 flex items-center justify-center
-      w-[24%] transition-all duration-300 bg-primary-foreground/25
+      w-[22%] transition-all duration-300 bg-black
       group-hover:w-[calc(100%-0.5rem)] group-active:scale-95
     "
                                     aria-hidden="true"

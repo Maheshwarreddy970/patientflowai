@@ -74,7 +74,7 @@ const FAQSection = () => {
             <p className="text-gray-600 mt-4 text-balance text-lg">Your questions answered</p>
             <p className="text-gray-600 mt-6 max-md:hidden">
               Can't find what you're looking for? Contact our{' '}
-              <Link href="#" className="text-[#0dc6ff] font-medium hover:underline">
+              <Link href="#" className="text-green-600 font-medium hover:underline">
                 customer support team
               </Link>
             </p>
@@ -107,7 +107,7 @@ const FAQSection = () => {
         </div>
         <p className="text-gray-600 mt-12 px-6 md:hidden">
           Can't find what you're looking for? Contact our{' '}
-          <Link href="#" className="text-blue-600 font-medium hover:underline">
+          <Link href="#" className="text-green-600 font-medium hover:underline">
             customer support team
           </Link>
         </p>

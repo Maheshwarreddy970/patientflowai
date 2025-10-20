@@ -85,11 +85,11 @@ export function Visual1() {
       aria-hidden
       className="relative h-full w-full overflow-hidden rounded-t-lg"
     >
-      <Layer1 color={"#4500a6"} secondaryColor={"#0dc6ff"} />
-      <Layer2 color={"#0dc6ff"} />
-      <Layer3 color={"#0dc6ff"} secondaryColor={"#4500a6"} />
+      <Layer1 color={"#000000"} secondaryColor={"#22c55e"} />
+      <Layer2 color={"#22c55e"} />
+      <Layer3 color={"#22c55e"} secondaryColor={"#000000"} />
       <Layer4 />
-      <EllipseGradient color={"#0dc6ff"} />
+      <EllipseGradient color={"#22c55e"} />
       <GridLayer color={"#80808015"} />
     </div>
   );

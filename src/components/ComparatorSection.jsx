@@ -1,5 +1,5 @@
 import { Cpu, MoveRight, Sparkles } from 'lucide-react'
-import {  HealthLogo} from './logo';
+import { HealthLogo } from './logo';
 
 
 
@@ -19,7 +19,7 @@ const tableData = [
     {
         feature: 'AI-Powered Features',
         diy_in_house: 'None (Extremely Expensive to Build)',
-        superworld: '✅ AI Visual Search, 24/7 Sales Chat, Smart Booking',
+        superworld: '✔ AI Visual Search, 24/7 Sales Chat, Smart Booking',
         other_saas: '❌ None, or basic chatbot for extra cost',
     },
     {
@@ -49,19 +49,19 @@ const tableData = [
     {
         feature: 'Maintenance & Updates',
         diy_in_house: 'Your Full-Time Job',
-        superworld: '✅ Completely Managed For You',
+        superworld: '✔ Completely Managed For You',
         other_saas: 'Your Problem, or Extra Fees',
     },
     {
         feature: 'Customer Support',
         diy_in_house: 'You Are the Support',
-        superworld: '✅ Dedicated Personal Manager',
+        superworld: '✔ Dedicated Personal Manager',
         other_saas: 'Submit a Ticket, Wait for Days',
     },
     {
         feature: 'Business Growth Impact',
         diy_in_house: 'Minimal / Negative ROI',
-        superworld: '✅ 3x Average Lead Increase',
+        superworld: '✔ 3x Average Lead Increase',
         other_saas: '❌ Zero Measurable Value',
     },
 ];
@@ -99,7 +99,7 @@ export default function PricingComparator({ Logotext }) {
                     />
                     <div className=" relative border-x flex flex-col gap-6 justify-center  py-10">
                         <div>
-                            <div className="relative mx-auto w-fit bg-gray-950/5 p-2">
+                            <div className="relative mx-auto w-fit bg-green-100 p-2">
                                 <div
                                     aria-hidden="true"
                                     className="absolute left-1 top-1 size-[3px] rounded-full bg-gray-950/20"
@@ -138,10 +138,10 @@ export default function PricingComparator({ Logotext }) {
 
             <section className=" border-y px-3 ">
 
-                <div className="  relative mx-auto max-w-6xl py-16 border-x  px-6">
+                <div className="  relative mx-auto max-w-6xl py-16 border-x   px-6">
                     <h2 className="text-foreground flex  items-center lg:hidden justify-center gap-2 mb-7 text-balance text-2xl font-semibold">Please Scroll Horizontally on Mobile Devices <MoveRight className=' animate-pulse'></MoveRight></h2>
                     <div className="w-full overflow-auto lg:overflow-visible">
-                        <table className="w-[200vw] border-separate border-spacing-x-3 md:w-full dark:[--color-muted:var(--color-zinc-900)]">
+                        <table className="w-[200vw] border-separate border-spacing-x-3 md:w-full ">
                             <thead className="bg-background sticky top-0">
                                 <tr className="*:py-4 *:text-left *:font-medium">
                                     <th className="lg:w-2/5"></th>
@@ -150,9 +150,9 @@ export default function PricingComparator({ Logotext }) {
 
 
                                     </th>
-                                    <th className="bg-gradient-to-r text-center   from-[#0dc6ff]  to-[#9e58ff] text-white rounded-t-(--radius) space-y-1 px-4">
+                                    <th className="bg-green-500  text-center    text-white rounded-t-3xl space-y-1 px-4">
                                         <div aria-label="home" className="flex justify-center  items-center space-x-2" href="/">
-                                                <HealthLogo className="h-11 w-11 p-1 border mb-2 shadow rounded-lg bg-white" />
+                                            <HealthLogo className="h-11 w-11 p-1 border mb-2 shadow rounded-lg bg-white" />
                                         </div>
 
                                     </th>
@@ -169,7 +169,7 @@ export default function PricingComparator({ Logotext }) {
                                         <span>Factor</span>
                                     </td>
                                     <td></td>
-                                    <td className="bg-muted border-none px-4 bg-gradient-to-r from-[#0dc6ff]  to-[#9e58ff] text-white "></td>
+                                    <td className=" border-none px-4 bg-green-500 text-white "></td>
                                     <td></td>
                                 </tr>
                                 {tableData.map((row, index) => (
@@ -194,7 +194,7 @@ export default function PricingComparator({ Logotext }) {
                                                 row.diy_in_house
                                             )}
                                         </td>
-                                        <td className="bg-muted border-none px-4 bg-gradient-to-r from-[#0dc6ff]  to-[#9e58ff] text-white">
+                                        <td className=" border-none px-4 bg-green-500 text-white">
                                             <div className="-mb-3 border-b py-3">
                                                 {row.superworld === true ? (
                                                     <svg
@@ -236,7 +236,7 @@ export default function PricingComparator({ Logotext }) {
                                 <tr className="*:py-6">
                                     <td></td>
                                     <td></td>
-                                    <td className="bg-gradient-to-r from-[#0dc6ff]  to-[#9e58ff] text-white rounded-b-(--radius) border-none px-4"></td>
+                                    <td className="bg-green-500 text-white rounded-b-3xl border-none px-4"></td>
                                     <td></td>
                                 </tr>
                             </tbody>

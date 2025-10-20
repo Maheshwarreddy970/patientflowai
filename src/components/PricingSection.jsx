@@ -48,7 +48,7 @@ export default function PricingWithChart() {
                     />
                     <div className=" relative border-x flex flex-col gap-6 justify-center  py-10">
                         <div>
-                            <div className="relative mx-auto w-fit bg-gray-950/5 p-2">
+                            <div className="relative mx-auto w-fit bg-green-100 p-2">
                                 <div
                                     aria-hidden="true"
                                     className="absolute left-1 top-1 size-[3px] rounded-full bg-gray-950/20"
@@ -101,7 +101,7 @@ export default function PricingWithChart() {
                                 <h2 className="backdrop-blur-2 inline rounded-[2px] p-1 text-xl font-semibold">
                                     Monthly Package
                                 </h2>
-                                <span className="my-3 block text-4xl relative bg-gradient-to-r from-[#0dc6ff]  to-[#9e58ff]  text-transparent bg-clip-text">
+                                <span className="my-3 block text-4xl relative bg-green-500  text-transparent bg-clip-text">
                                     $99
                                 </span>
                                 <p className="text-muted-foreground text-sm">
@@ -110,9 +110,33 @@ export default function PricingWithChart() {
                                 </p>
                             </div>
 
-                            <a href='/getstarted' className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 px-4 py-2 border  bg-gradient-to-t from-[#0dc6ff] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 hover:-translate-y-0.5 hover:scale-105 transition-all ease-in-out duration-300 group hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
-                                <span>Get Started</span><ChevronRight className="ml-0 group-hover:translate-x-1 transition-all ease-in-out duration-300 !size-3.5 opacity-50" />
-                            </a >
+                            <a
+                                href='/getstarted'
+                                className="
+                                bg-green-500  
+                                inline-flex items-center   justify-center gap-2 whitespace-nowrap text-sm font-medium
+                                transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring
+                                disabled:pointer-events-none disabled:opacity-50
+                                [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0
+                                text-primary-foreground shadow-md  border  hover:bg-green-500/90
+                                h-10 px-6 rounded-full group relative overflow-hidden
+                              "
+                            >
+                                <span className="mr-6 transition-opacity duration-300 group-hover:opacity-0">
+                                    Get Started
+                                </span>
+
+                                <span
+                                    className="
+                                  absolute right-1 top-1 border shadow-inner shadow-white/30  border-green-500/50   bottom-1 rounded-full z-10 flex items-center justify-center
+                                  w-[22%] transition-all duration-300 bg-black
+                                  group-hover:w-[calc(100%-0.5rem)] group-active:scale-95
+                                "
+                                    aria-hidden="true"
+                                >
+                                    <ChevronRight className=' ml-0.5 ' />
+                                </span>
+                            </a>
 
                             <div className="bg-border my-6 h-px w-full" />
 
@@ -125,7 +149,7 @@ export default function PricingWithChart() {
                                     '24/7 Customer Support',
                                 ].map((item, index) => (
                                     <li key={index} className="flex items-center gap-2">
-                                        <CheckCircleIcon className="h-4 w-4 text-purple-600" />
+                                        <CheckCircleIcon className="h-4 w-4 text-green-600" />
                                         {item}
                                     </li>
                                 ))}
@@ -139,7 +163,7 @@ export default function PricingWithChart() {
                         <div className="flex flex-col justify-between space-y-6">
                             <div>
                                 <h2 className="text-xl font-semibold">AI Monthly Package</h2>
-                                <span className="my-3 block text-4xl relative bg-gradient-to-r from-[#0dc6ff]  to-[#9e58ff]  text-transparent bg-clip-text">
+                                <span className="my-3 block text-4xl relative bg-green-500  text-transparent bg-clip-text">
                                     $199
                                 </span>
                                 <p className="text-muted-foreground text-sm">
@@ -182,7 +206,7 @@ export default function PricingWithChart() {
 
                                 ].map((item, index) => (
                                     <li key={index} className="flex items-center gap-2">
-                                        <CheckCircleIcon className="h-4 w-4 text-[#0dc6ff]" />
+                                        <CheckCircleIcon className="h-4 w-4 text-green-600" />
                                         {item}
                                     </li>
                                 ))}
@@ -190,8 +214,32 @@ export default function PricingWithChart() {
 
                             {/* Call to Action */}
                             <div className="mt-10  w-full ">
-                                <a href='/getstarted' className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 px-4 py-2 border  bg-gradient-to-t from-[#0dc6ff] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 hover:-translate-y-0.5 hover:scale-105 transition-all ease-in-out duration-300 group hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
-                                    <span>Get Started</span><ChevronRight className="ml-0 group-hover:translate-x-1 transition-all ease-in-out duration-300 !size-3.5 opacity-50" />
+                                <a
+                                    href='/getstarted'
+                                    className="
+                                  bg-green-500  
+                                  inline-flex items-center   justify-center gap-2 whitespace-nowrap text-sm font-medium
+                                  transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring
+                                  disabled:pointer-events-none disabled:opacity-50
+                                  [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0
+                                  text-primary-foreground shadow-md  border  hover:bg-green-500/90
+                                  h-10 px-6 rounded-full group relative overflow-hidden
+                                "
+                                >
+                                    <span className="mr-6 transition-opacity duration-300 group-hover:opacity-0">
+                                        Get Started
+                                    </span>
+
+                                    <span
+                                        className="
+                                    absolute right-1 top-1 border shadow-inner shadow-white/30  border-green-500/50   bottom-1 rounded-full z-10 flex items-center justify-center
+                                    w-[22%] transition-all duration-300 bg-black
+                                    group-hover:w-[calc(100%-0.5rem)] group-active:scale-95
+                                  "
+                                        aria-hidden="true"
+                                    >
+                                        <ChevronRight className=' ml-0.5 ' />
+                                    </span>
                                 </a>
                             </div>
                         </div>

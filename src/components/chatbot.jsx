@@ -9,91 +9,14 @@ import { cn } from '@/lib/utils'
 import { BarVisualizer } from './ui/bar-visualizer'
 import { vapi } from "@/lib/vapi"
 import { AiChatBotCall } from '@/actions/chat'
+import { IconMicrophone } from '@tabler/icons-react'
 
 export default function Chatbot() {
     const [voiceMode, setVoiceMode] = useState(false)
     const [callActive, setCallActive] = useState(false)
     const [connecting, setConnecting] = useState(false)
     const [isSpeaking, setIsSpeaking] = useState(false)
-    const [messages, setMessages] = useState([
-  {
-    id: "1",
-    role: "user",
-    parts: [{ type: "text", text: "Hello, I'd like to book an appointment." }],
-  },
-  {
-    id: "2",
-    role: "assistant",
-    parts: [
-      {
-        type: "text",
-        text: "Of course! I can help with that. Are you looking to book a dental appointment or a mental health therapy session?",
-      },
-    ],
-  },
-  {
-    id: "3",
-    role: "user",
-    parts: [{ type: "text", text: "A dental check-up, please." }],
-  },
-  {
-    id: "4",
-    role: "assistant",
-    parts: [
-      {
-        type: "text",
-        text: "Great. To find the best time for you, could you let me know if you are a new or an existing patient?",
-      },
-    ],
-  },
-  {
-    id: "5",
-    role: "user",
-    parts: [{ type: "text", text: "I'm a new patient." }],
-  },
-  {
-    id: "6",
-    role: "assistant",
-    parts: [
-      {
-        type: "text",
-        text: "Welcome! We're happy to have you. We have the following times available for new patient check-ups tomorrow: 10:00 AM, 11:30 AM, or 2:00 PM. Which time works best for you?",
-      },
-    ],
-  },
-  {
-    id: "7",
-    role: "user",
-    parts: [{ type: "text", text: "10:00 AM sounds perfect." }],
-  },
-  {
-    id: "8",
-    role: "assistant",
-    parts: [
-      {
-        type: "text",
-        text: "Excellent. I've reserved the 10:00 AM slot for you. To finalize your booking, could you please provide your full name and email address?",
-      },
-    ],
-  },
-  {
-    id: "9",
-    role: "user",
-    parts: [
-      { type: "text", text: "My name is Alex, and my email is alex@email.com" },
-    ],
-  },
-  {
-    id: "10",
-    role: "assistant",
-    parts: [
-      {
-        type: "text",
-        text: "Thank you, Alex. Your appointment for a new patient dental check-up is confirmed for tomorrow at 10:00 AM. A confirmation email has been sent to your email address with all the details and a link to fill out your new patient forms online to save time. You will also receive a reminder via WhatsApp. Is there anything else I can help you with today?",
-      },
-    ],
-  },
-])
+    const [messages, setMessages] = useState([])
     const [callEnded, setCallEnded] = useState(false)
     const [inputText, setInputText] = useState("")
     const [isGrokLoading, setIsGrokLoading] = useState(false)
@@ -271,7 +194,7 @@ export default function Chatbot() {
         : 'initializing'
 
     return (
-        <div className="relative h-[80vh] w-[60vh] bg-black/5 shadow-black/20 shadow-inner p-2 mx-auto border-x">
+        <div className="relative h-[80vh] w-[60vh] bg-green-100   shadow-inner p-2 mx-auto border-x">
             <div
                 aria-hidden="true"
                 className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -left-[3.5px] -top-[3.5px]"
@@ -289,7 +212,7 @@ export default function Chatbot() {
                 className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -bottom-[3.5px] -left-[3.5px]"
             />
 
-            <div className='flex flex-col justify-between overflow-hidden h-full w-full py-4 px-2 shadow border-[3px] bg-white rounded-2xl'>
+            <div className='flex flex-col justify-between overflow-hidden h-full w-full py-4 px-2   shadow-xl border-[2px] bg-white rounded-2xl'>
                 <div className={cn('flex justify-end flex-col items-center', voiceMode ? 'h-[60%]' : 'h-[90%]')}>
                     <ConversationDemo messages={messages} setMessages={setMessages} />
                 </div>
@@ -307,9 +230,9 @@ export default function Chatbot() {
                     <button 
                         onClick={toggleCall}
                         disabled={connecting}
-                        className='overflow-hidden rounded-full border h-[88%] shadow my-auto w-10 flex justify-center items-center disabled:opacity-50 disabled:cursor-not-allowed'
+                        className='overflow-hidden rounded-full border h-full   w-12 p-[3px] shadow flex justify-center items-center disabled:opacity-50 disabled:cursor-not-allowed'
                     >
-                        <VoiceAnimation className={cn('scale-[0.3]', voiceMode && 'opacity-50')} />
+                        <IconMicrophone className={cn('border p-1.5 text-zinc-600 shadow-green-500 rounded-full h-full w-full bg-neutral-100 shadow ')} />
                     </button>
                     <button onClick={()=>{if (callActive) {
             vapi.stop()

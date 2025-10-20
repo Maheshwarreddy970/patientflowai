@@ -49,7 +49,7 @@ const FeaturesSection = () => {
                     />
                     <div className=" relative border-x flex flex-col gap-6 justify-center  py-10">
                         <div>
-                            <div className="relative mx-auto w-fit bg-gray-950/5 p-2">
+                            <div className="relative mx-auto w-fit bg-green-100 p-2">
                                 <div
                                     aria-hidden="true"
                                     className="absolute left-1 top-1 size-[3px] rounded-full bg-gray-950/20"
@@ -111,7 +111,7 @@ const FeaturesSection = () => {
                                             <div className="relative">
                                                 <div className="bg-card relative overflow-hidden sm:px-6 py-3">
                                                     <div className="flex items-center gap-3 border-b border-dashed py-3 last:border-b-0">
-                                                        <div className="cursor-pointer inline-flex rounded-md items-center bg-gradient-to-r from-[#0dc6ff] to-[#9e58ff] overflow-hidden justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 p-1 shadow-black/15 border border-transparent bg-background ring-1 ring-foreground/10 duration-200 hover:bg-muted/50 dark:ring-foreground/15 dark:hover:bg-muted/50 h-9 w-9 shrink-0">
+                                                        <div className="cursor-pointer inline-flex rounded-md items-center bg-green-500 overflow-hidden justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 p-1 shadow-black/15 border border-transparent bg-background ring-1 ring-foreground/10 duration-200 hover:bg-muted/50 dark:ring-foreground/15 dark:hover:bg-muted/50 h-9 w-9 shrink-0">
                                                             <IconTemplateFilled stroke={1} className="h-full w-full fill-white" />
                                                         </div>
                                                         <div className="space-y-0.5">
@@ -120,8 +120,8 @@ const FeaturesSection = () => {
                                                         </div>
                                                     </div>
                                                     <div className="flex items-center gap-3 border-b border-dashed py-3 last:border-b-0">
-                                                        <div className="cursor-pointer inline-flex rounded-md items-center bg-gradient-to-r from-[#0dc6ff] to-[#9e58ff] overflow-hidden justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 p-0.5 shadow-black/15 border border-transparent bg-background ring-1 ring-foreground/10 duration-200 hover:bg-muted/50 dark:ring-foreground/15 dark:hover:bg-muted/50 h-9 w-9 shrink-0">
-                                                            <IconWorldWww stroke={0.9} className="h-full w-full text-white fill-[#9e58ff]" />
+                                                        <div className="cursor-pointer inline-flex rounded-md items-center bg-green-500 overflow-hidden justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 p-0.5 shadow-black/15 border border-transparent  ring-1 ring-foreground/10 duration-200 hover:bg-muted/50 dark:ring-foreground/15 dark:hover:bg-muted/50 h-9 w-9 shrink-0">
+                                                            <IconWorldWww stroke={0.9} className="h-full w-full text-white fill-white/60" />
                                                         </div>
                                                         <div className="space-y-0.5">
                                                             <h3 className="text-sm font-medium">Hosting included:</h3>
@@ -129,7 +129,7 @@ const FeaturesSection = () => {
                                                         </div>
                                                     </div>
                                                     <div className="flex items-center gap-3 border-b border-dashed py-3 last:border-b-0">
-                                                        <div className="cursor-pointer inline-flex rounded-md items-center bg-gradient-to-r from-[#0dc6ff] to-[#9e58ff] overflow-hidden justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow-black/15 border border-transparent bg-background ring-1 ring-foreground/10 duration-200 hover:bg-muted/50 dark:ring-foreground/15 dark:hover:bg-muted/50 h-9 w-9 shrink-0">
+                                                        <div className="cursor-pointer inline-flex rounded-md items-center bg-green-500 overflow-hidden justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow-black/15 border border-transparent  ring-1 ring-foreground/10 duration-200 hover:bg-muted/50 dark:ring-foreground/15 dark:hover:bg-muted/50 h-9 w-9 shrink-0">
                                                             <IconAi stroke={1.6} className="h-full w-full text-white " />
                                                         </div>
                                                         <div className="space-y-0.5">
@@ -242,9 +242,9 @@ const FeaturesSection = () => {
                                             </div>
                                         </div>
                                         <div className="mask-b-from-75% order-1 lg:order-last col-span-5 lg:col-span-2 mask-b-to-95% mask-r-from-85% relative h-fit perspective-distant p-6">
-                                            <div className="bg-black/5 shadow-md overflow-hidden rounded-t-lg rotate-x-20 skew-x-12 border-t px-2 pt-2 dark:bg-zinc-950">
+                                            <div className="bg-green-100 shadow-md overflow-hidden rounded-t-lg rotate-x-20 skew-x-12 border-t px-2 pt-2 dark:bg-zinc-950">
                                                 <Image
-                                                    src="/Dashboard Design(1).jpg"
+                                                    src="/Dashboard Design (1).png"
                                                     className="shadow"
                                                     alt="dashboard illustration"
                                                     width={1207}
@@ -290,7 +290,7 @@ const ChatSupportSection = () => {
                     </div>
                 </div>
                 <div>
-                    <div className="rounded-(--radius) bg-gradient-to-r from-[#0dc6ff] to-[#9e58ff] inset-ring-foreground/10 inset-ring-1 mb-1 ml-auto w-3/5 rounded-br p-3 text-xs text-white shadow shadow-black/15">
+                    <div className="rounded-(--radius) bg-green-500 inset-ring-foreground/10 inset-ring-1 mb-1 ml-auto w-3/5 rounded-br p-3 text-xs text-white shadow shadow-black/15">
                         Let's get that sorted out! Can you specify the issue you're facing with your account?
                     </div>
                     <span className="text-muted-foreground block text-right text-xs">Now</span>

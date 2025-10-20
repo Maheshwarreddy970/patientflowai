@@ -4,14 +4,14 @@ import DottedMap from "dotted-map";
 
 export function WorldMap({
   dots = [],
-  lineColor = "#0dc6ff"
+  lineColor = "#000000",
 }) {
   const svgRef = useRef(null);
   const map = new DottedMap({ height: 100, grid: "diagonal" });
 
   const svgMap = map.getSVG({
     radius: 0.22,
-    color: "#00000040", // Fixed to black with 40% opacity (light theme default)
+    color: "#22c55e", // Fixed to black with 40% opacity (light theme default)
     shape: "circle",
     backgroundColor: "white", // Fixed to white (light theme default)
   });

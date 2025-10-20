@@ -40,14 +40,38 @@ const CTA = () => {
                     </linearGradient>
                   </defs>
                 </svg>
-                <span className="relative bg-gradient-to-r from-[#0dc6ff]  to-[#9e58ff] inline-block text-transparent bg-clip-text">Customers</span>
+                <span className="relative bg-green-500 inline-block text-transparent bg-clip-text">Customers</span>
               </span>
             </h1>
             <p className="text-gray-600 mb-6 mt-4 text-balance text-lg">
               Join Us Today to Streamline Operations and Drive Success with Cutting-Edge Technology.
             </p>
-            <a href='/requestdemo' className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 px-4 py-2 border  bg-gradient-to-t from-[#0dc6ff] to-[#C69CFF] text-white shadow-md shadow-zinc-950/20 ring-1 ring-inset ring-white/20 hover:-translate-y-0.5 hover:scale-105 transition-all ease-in-out duration-300 group hover:brightness-110 active:brightness-90 dark:border-white/20 dark:ring-transparent">
-              <span>Request Demo</span><ChevronRight className="ml-0 group-hover:translate-x-1 transition-all ease-in-out duration-300 !size-3.5 opacity-50" />
+            <a
+              href='/getstarted'
+              className="
+              bg-green-500  
+              inline-flex items-center   justify-center gap-2 whitespace-nowrap text-sm font-medium
+              transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring
+              disabled:pointer-events-none disabled:opacity-50
+              [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0
+              text-primary-foreground shadow-md  border  hover:bg-green-500/90
+              h-10 px-6 rounded-full group relative overflow-hidden
+            "
+            >
+              <span className="mr-6 transition-opacity duration-300 group-hover:opacity-0">
+                Get Started
+              </span>
+
+              <span
+                className="
+                absolute right-1 top-1 border shadow-inner shadow-white/30  border-green-500/50   bottom-1 rounded-full z-10 flex items-center justify-center
+                w-[22%] transition-all duration-300 bg-black
+                group-hover:w-[calc(100%-0.5rem)] group-active:scale-95
+              "
+                aria-hidden="true"
+              >
+                <ChevronRight className=' ml-0.5 ' />
+              </span>
             </a>
           </div>
 

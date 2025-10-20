@@ -4,15 +4,15 @@ import { HeroVideoDialog } from './ui/hero-video-dialog'
 export default function Demovideo() {
     return (
         <>
-        <div id='demo' className='bg-white w-full px-3'>
+            <div id='demo' className='bg-white w-full px-3'>
                 <div className="relative   mx-auto max-w-6xl border-x px-4 sm:px-6 md:px-12">
 
-                  
+
                     <div
                         aria-hidden="true"
                         className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -top-[3.5px] left-3 translate-x-[1.5px] sm:left-5 md:left-11"
                     />
-                  
+
                     <div
                         aria-hidden="true"
                         className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -top-[3.5px] right-3 -translate-x-[1.5px] sm:right-5 md:right-11"
@@ -35,7 +35,7 @@ export default function Demovideo() {
                     />
                     <div className=" relative border-x flex flex-col gap-6 justify-center  py-10">
                         <div>
-                            <div className="relative mx-auto w-fit bg-gray-950/5 p-2">
+                            <div className="relative mx-auto w-fit bg-green-100 p-2">
                                 <div
                                     aria-hidden="true"
                                     className="absolute left-1 top-1 size-[3px] rounded-full bg-gray-950/20"
@@ -63,7 +63,7 @@ export default function Demovideo() {
                                 Don’t See a Feature You Need? Let’s Build It.
                             </h1>
                             <p className="text-muted-foreground mx-auto mt-3   max-w-xl text-balance md:text-lg ">
-Our standard platform solves 99% of industry challenges. For that last 1%, we build custom solutions. Schedule a demo to explore our current features and talk to our team about developing a personalized tool just for you.
+                                Our standard platform solves 99% of industry challenges. For that last 1%, we build custom solutions. Schedule a demo to explore our current features and talk to our team about developing a personalized tool just for you.
 
                             </p>
 

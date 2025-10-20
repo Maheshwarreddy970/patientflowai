@@ -41,7 +41,7 @@ export const ConversationEmptyState = ({
     {...props}>
     {children ?? (
       <>
-        {icon && <div className="text-muted-foreground">{icon}</div>}
+        {icon && <div className="text-muted-foreground mb-10">{icon}</div>}
         <div className="space-y-1">
           <h3 className="text-sm font-medium">{title}</h3>
           {description && (
