@@ -4,69 +4,76 @@ import { HealthLogo } from './logo';
 
 
 const tableData = [
-    {
-        feature: 'Total Investment',
-        diy_in_house: '$5,000 - $20,000+ upfront',
-        superworld: '$99 - $199/month',
-        other_saas: '$299 - $999/month + hidden fees',
-    },
-    {
-        feature: 'Contract Terms',
-        diy_in_house: 'No Contract (High Sunk Cost)',
-        superworld: 'Month-to-Month Freedom',
-        other_saas: '12-36 Month Lock-In',
-    },
-    {
-        feature: 'AI-Powered Features',
-        diy_in_house: 'None (Extremely Expensive to Build)',
-        superworld: '✔ AI Visual Search, 24/7 Sales Chat, Smart Booking',
-        other_saas: '❌ None, or basic chatbot for extra cost',
-    },
-    {
-        feature: 'Mobile Experience',
-        diy_in_house: 'Poor / Often Broken',
-        superworld: 'Mobile-First, Lightning Fast',
-        other_saas: 'Slow, Clunky, Outdated',
-    },
-    {
-        feature: 'Admin Dashboard Experience',
-        diy_in_house: 'Technical & Complex',
-        superworld: 'Simple, 2-Click Updates',
-        other_saas: 'Overwhelming & Confusing',
-    },
-    {
-        feature: 'Customer Experience (UX)',
-        diy_in_house: 'Amateur & Confusing',
-        superworld: 'Seamless & Conversion-Optimized',
-        other_saas: 'Frustrating for Customers',
-    },
-    {
-        feature: 'Time to Go Live',
-        diy_in_house: '3-6 Months',
-        superworld: '48-72 Hours',
-        other_saas: '6-12 Weeks',
-    },
-    {
-        feature: 'Maintenance & Updates',
-        diy_in_house: 'Your Full-Time Job',
-        superworld: '✔ Completely Managed For You',
-        other_saas: 'Your Problem, or Extra Fees',
-    },
-    {
-        feature: 'Customer Support',
-        diy_in_house: 'You Are the Support',
-        superworld: '✔ Dedicated Personal Manager',
-        other_saas: 'Submit a Ticket, Wait for Days',
-    },
-    {
-        feature: 'Business Growth Impact',
-        diy_in_house: 'Minimal / Negative ROI',
-        superworld: '✔ 3x Average Lead Increase',
-        other_saas: '❌ Zero Measurable Value',
-    },
+  {
+    feature: 'Patient Trust (First 3 Seconds)',
+    diy_in_house: 'Low—outdated design triggers skepticism',
+    patientflowai: 'High—premium design creates instant confidence',
+    other_saas: 'Medium—generic templates feel impersonal',
+  },
+  {
+    feature: 'Mobile Booking Experience',
+    diy_in_house: 'Broken, frustrating—patients give up',
+    patientflowai: '✅ Flawless, 45 seconds—effortless flow',
+    other_saas: 'Clunky, requires patience—creates friction',
+  },
+  {
+    feature: 'Patient Emotional Experience',
+    diy_in_house: 'Anxiety from confusion and poor UX',
+    patientflowai: '✅ Relief from intuitive, caring design',
+    other_saas: 'Neutral—functional but uninspiring',
+  },
+  {
+    feature: 'Trust Badges & Security',
+    diy_in_house: 'Missing or hidden—patients feel unsafe',
+    patientflowai: '✅ Prominent HIPAA/SSL seals—feel protected',
+    other_saas: 'Basic SSL only—minimal reassurance',
+  },
+  {
+    feature: 'AI Response Quality',
+    diy_in_house: 'None—voicemail feels abandoning',
+    patientflowai: '✅ Warm, intelligent—feels genuinely caring',
+    other_saas: 'Robotic chatbot—feels impersonal and frustrating',
+  },
+  {
+    feature: 'After-Hours Availability',
+    diy_in_house: 'Dead silence—patients feel ignored',
+    patientflowai: '✅ Immediate compassionate response—valued 24/7',
+    other_saas: 'Generic auto-reply—impersonal',
+  },
+  {
+    feature: 'Visual Cleanliness',
+    diy_in_house: 'Cluttered, overwhelming—hard to navigate',
+    patientflowai: '✅ Clean, organized—effortless to use',
+    other_saas: 'Busy templates—generic and forgettable',
+  },
+  {
+    feature: 'Booking Confidence Level',
+    diy_in_house: 'Low—friction creates abandonment',
+    patientflowai: '✅ High—seamless process builds certainty',
+    other_saas: 'Medium—functional but uninspiring',
+  },
+  {
+    feature: 'Perceived Doctor Quality',
+    diy_in_house: '"Website is bad, care must be too"—lost trust',
+    patientflowai: '"This excellence means excellent care"—strong trust',
+    other_saas: '"Probably average practice"—neutral',
+  },
+  {
+    feature: 'Patient Loyalty & Referrals',
+    diy_in_house: 'Low—no emotional connection',
+    patientflowai: '✅ High—seamless experience creates advocates',
+    other_saas: 'Low—interchangeable with others',
+  },
+  {
+    feature: 'Load Speed',
+    diy_in_house: '8+ seconds—patients leave immediately',
+    patientflowai: '✅ 0.8 seconds—instant, impressive',
+    other_saas: '3-5 seconds—acceptable, not premium',
+  },
 ];
 
-export default function PricingComparator({ Logotext }) {
+
+export default function PricingComparator() {
     return (
         <>
             <div id='competition' className='bg-white border-t w-full px-3 '>
@@ -124,12 +131,10 @@ export default function PricingComparator({ Logotext }) {
                         </div>
                         <div className="mx-auto max-w-3xl text-center ">
                             <h1 className="text-foreground text-balance text-3xl font-medium sm:text-5xl ">
-                                Are You Overpaying for a Website That Doesn't Work?
+                                Their Website Frustrates Patients. Yours Should Delight Them.
                             </h1>
                             <p className="text-muted-foreground mx-auto mt-3   max-w-xl text-balance md:text-lg ">
-                                Most businesses are trapped in expensive contracts for outdated, underperforming websites. See the side-by-side comparison that proves there’s a smarter way to grow.
-
-                            </p>
+                                Every confusing click erodes trust. Every smooth interaction builds it. See why doctors who invest in seamless patient experiences capture 3x more appointments than those with outdated, frustrating websites.                            </p>
 
                         </div>
                     </div>
@@ -196,7 +201,7 @@ export default function PricingComparator({ Logotext }) {
                                         </td>
                                         <td className=" border-none px-4 bg-green-500 text-white">
                                             <div className="-mb-3 border-b py-3">
-                                                {row.superworld === true ? (
+                                                {row.patientflowai === true ? (
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         viewBox="0 0 24 24"
@@ -209,7 +214,7 @@ export default function PricingComparator({ Logotext }) {
                                                         />
                                                     </svg>
                                                 ) : (
-                                                    row.superworld
+                                                    row.patientflowai
                                                 )}
                                             </div>
                                         </td>

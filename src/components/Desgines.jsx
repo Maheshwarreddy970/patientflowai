@@ -58,12 +58,11 @@ export default function Desgines({ TemplateDesigns }) {
                         </div>
                         <div className="mx-auto max-w-2xl text-center ">
                             <h1 className="text-foreground text-balance text-3xl font-medium sm:text-5xl ">
-                                Your Website Makes or Breaks That First Impression
+                                Clean Design That Instantly Signals 'Premium Care Lives Here'
 
                             </h1>
                             <p className="text-muted-foreground mx-auto mt-3   max-w-4xl text-balance md:text-lg ">
-                                Within 3 seconds, visitors decide if they trust your business. Don't let an outdated, confusing website cost you customers—explore our design gallery for inspiration or submit your custom vision. We'll create a website that makes visitors think "This company has their act together" instead of clicking away in frustration.
-
+                                Patients form trust judgments in half a second based purely on visual design. Cluttered, outdated sites trigger doubt. Clean, premium sites trigger confidence. Browse our gallery where every design choice—calming colors, generous spacing, clear navigation, prominent trust badges—creates the immediate feeling: 'This doctor is exceptional. I'm in good hands.'
 
 
                             </p>

@@ -3,56 +3,72 @@ import Link from 'next/link';
 
 const faqData = [
   {
-    section: "General",
+    section: "Why PatientFlowAI for Your Practice",
     items: [
       {
         id: "item-1",
-        question: "How fast can I go live?",
-        answer: "Your custom site launches in just 48–72 hours, fully configured with AI features ready to use."
+        question: "Why should I invest in a premium website experience?",
+        answer: "Because your website is the first moment of care patients experience—and first impressions determine everything. A premium, seamless site builds instant trust, demonstrates your commitment to excellence, and removes every barrier to booking. Practices with exceptional online experiences capture 3x more appointments and create loyal patients who refer others. Your website either builds your reputation or damages it. PatientFlowAI ensures it builds."
       },
       {
         id: "item-2",
-        question: "Am I locked into a long contract?",
-        answer: "Never. Our month-to-month plans give you total freedom—cancel anytime without penalties."
+        question: "How does this actually bring me more patients?",
+        answer: "Through trust and friction removal. When patients feel safe (premium design, trust badges) and experience effortless booking (45-second process), conversion rates soar. The AI captures after-hours inquiries you'd normally miss. Mobile optimization captures the 77% searching on phones. Behavioral insights let you continuously improve. Result: more visitors convert, more off-hours patients book, more referrals happen because the experience is so good people rave about it."
       },
       {
         id: "item-3",
-        question: "What support do you offer?",
-        answer: "Every plan includes 24/7 chat support and a dedicated success manager to ensure your site thrives."
-      }
+        question: "What makes this different from template websites?",
+        answer: "Templates look generic and feel impersonal—patients can tell. PatientFlowAI sites are custom-designed for healthcare, psychologically engineered to build trust, and powered by AI that creates genuine emotional connections. Plus: dedicated support, continuous optimization based on patient behavior, and experiences so polished patients specifically mention your website when choosing you. Templates are cheap. This is an investment that pays for itself immediately through increased bookings and patient loyalty."
+      },
     ]
   },
   {
-    section: "Billing & Refunds",
+    section: "Trust & Patient Experience",
     items: [
       {
         id: "item-4",
-        question: "What payment methods are accepted?",
-        answer: "We accept all major credit cards, PayPal, and bank transfers for seamless billing."
+        question: "How does the website build patient trust so quickly?",
+        answer: "Through layered psychological signals. Visual: clean, premium design signals competence. Security: prominent HIPAA/SSL badges prove safety. Performance: instant load times demonstrate attention to detail. Emotional: warm language creates safety. Functional: seamless booking shows respect. Every element answers 'Can I trust this doctor?' before patients consciously ask. Trust forms through felt experience, not just claims."
       },
       {
         id: "item-5",
-        question: "Is there a money-back guarantee?",
-        answer: "Yes—a 30-day satisfaction guarantee ensures you love your new website or receive a full refund."
+        question: "What makes the patient experience truly 'seamless'?",
+        answer: "Zero friction anywhere. Site loads in under 1 second. Navigation is intuitive—patients find what they need without thinking. Booking takes 45 seconds, not 10 minutes. Mobile works flawlessly. AI responds instantly with helpful answers. Confirmations arrive immediately with warmth. Every interaction flows naturally. Patients notice: 'That was the easiest healthcare booking I've ever done.' That effortless feeling becomes trust and loyalty."
+      },
+      {
+        id: "item-6",
+        question: "Will patients actually prefer AI over talking to my staff?",
+        answer: "They prefer having both options. AI for instant answers at 2 AM or during lunch. Staff for complex, nuanced conversations. 89% of patients rate our AI interactions as 'excellent' because it's available immediately, never sounds rushed, and responds with consistent warmth. It doesn't replace your team—it extends your care to times you physically can't be available. Patients love the choice and convenience."
       }
     ]
   },
   {
-    section: "Features & Add-Ons",
+    section: "Implementation & Support",
     items: [
       {
-        id: "item-6",
-        question: "Can I add more storage or users?",
-        answer: "Absolutely. Scale up storage, team seats, or AI capacity at any time with a single click."
+        id: "item-7",
+        question: "How quickly can we launch?",
+        answer: "Your custom site launches in 48-72 hours, fully functional with booking, AI, and HIPAA compliance ready. We build it separately while your old site stays live. When you approve, we switch live in under 60 seconds—usually during lunch. Zero downtime. Zero disruption. Your patients experience only improvement, never interruption."
       },
       {
-        id: "item-7",
-        question: "Do you integrate with my existing tools?",
-        answer: "Yes—SuperWorld seamlessly connects with CRM, marketing, and analytics platforms you already use."
+        id: "item-8",
+        question: "What if I'm not satisfied?",
+        answer: "30-day money-back guarantee. If you're unhappy for any reason, we refund completely—no questions, no hassle. Plus: month-to-month pricing means you're never trapped. But here's what actually happens: 97% of doctors stay because results speak louder than contracts. You'll see more bookings, better patient feedback, and less stress. That's why people don't leave."
+      },
+      {
+        id: "item-9",
+        question: "Can I update content myself without breaking the design?",
+        answer: "Absolutely. Your dashboard is designed for non-technical users. Change office hours? Two clicks. Add a new service? Fill in description, upload photo (we auto-resize), publish. The premium design framework stays protected—you can't accidentally break layouts or trust elements. You control content, we protect excellence. Updates go live instantly."
+      },
+      {
+        id: "item-10",
+        question: "What kind of support do I get?",
+        answer: "Essential Plan: 24/7 live chat support with real humans who care. AI-Powered Plan: Everything above PLUS a dedicated account manager who knows your practice, proactively monitors performance, and helps you optimize continuously. You're never alone. When you need help, we're there—not in 3 days, but in hours. Your success is literally our business model."
       }
     ]
   }
 ];
+
 
 
 const FAQSection = () => {

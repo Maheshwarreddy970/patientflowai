@@ -68,7 +68,7 @@ function SubmitButton() {
                 </>
             ) : (
                 <>
-                    <span>Submit</span>
+                    <span>Request Free Demo</span>
                     <ChevronRight className="ml-0 group-hover:translate-x-1 transition-all ease-in-out duration-300 !size-3.5 opacity-50" />
                 </>
             )}
@@ -76,7 +76,7 @@ function SubmitButton() {
     );
 }
 
-export default function InvoicingSection() {
+export default function FreeDemoRequestSection() {
     const [state, formAction] = useFormState(submitContactForm, null);
 
     return (
@@ -94,20 +94,20 @@ export default function InvoicingSection() {
                     <div className="grid grid-cols-2 divide-x border-y *:p-6 md:*:p-8 lg:grid-cols-4">
                         {/* Left Section */}
                         <div className="col-span-2 border-b max-lg:border-r-0 max-md:text-center">
-                            <h1 className="text-balance text-3xl font-semibold md:text-5xl">
-                                AI-Powered Websites. Industry Expertise. Real Results.
+                            <h1 className="text-balance text-2xl font-semibold md:text-4xl">
+                                Experience Seamless AI-Driven Websites Built to Inspire Patient Trust
                             </h1>
                             <p className="text-muted-foreground mb-8 mt-6 max-w-sm text-balance text-lg max-md:mx-auto">
-                                Our SuperWorld Technologies platform delivers custom AI-enhanced websites designed for your industry, complete with automated features and 24/7 support, all on our secure infrastructure.
+                                Discover how our tailored AI-enhanced healthcare websites create effortless patient journeys—fast launches, industry-specific features, real-time insights, and full support—empowering you to grow with trust and professionalism.
                             </p>
 
-                            <ul className="mt-8 space-y-2">
-                                <li className="text-muted-foreground flex items-center gap-2 max-md:justify-center">Launch your AI website in 48-72 hours</li>
-                                <li className="text-muted-foreground flex items-center gap-2 max-md:justify-center">Get industry-specific features built-in</li>
-                                <li className="text-muted-foreground flex items-center gap-2 max-md:justify-center">Access real-time analytics dashboard</li>
-                                <li className="text-muted-foreground flex items-center gap-2 max-md:justify-center">Mobile-first design optimized for conversions</li>
-                                <li className="text-muted-foreground flex items-center gap-2 max-md:justify-center">Complete hosting and maintenance included</li>
-                                <li className="text-muted-foreground flex items-center gap-2 max-md:justify-center">Dedicated account manager for ongoing support</li>
+                            <ul className="mt-8 space-y-2 text-muted-foreground flex flex-col max-md:items-center">
+                                <li>Launch your AI-powered website in just 48-72 hours</li>
+                                <li>Integrated features tailored for healthcare providers</li>
+                                <li>Live analytics dashboard to monitor patient engagement</li>
+                                <li>Mobile-first, conversion-optimized design</li>
+                                <li>All hosting, maintenance, and security included</li>
+                                <li>Dedicated account manager for personalized support</li>
                             </ul>
                         </div>
 
@@ -135,7 +135,7 @@ export default function InvoicingSection() {
                                 
                                 <div className="grid gap-3 sm:grid-cols-2">
                                     <div className="space-y-3">
-                                        <Label htmlFor="name">Full name</Label>
+                                        <Label htmlFor="name">Full Name</Label>
                                         <Input id="name" name="name" type="text" required className="h-9 text-base md:text-sm" />
                                     </div>
                                     <div className="space-y-3">
@@ -171,11 +171,11 @@ export default function InvoicingSection() {
                                     <Label htmlFor="website">Company Website</Label>
                                     <div className="relative">
                                         <Input
-                                        required
+                                            required
                                             id="website"
                                             name="website"
                                             type="url"
-                                            placeholder="superworldtechnologies.com"
+                                            placeholder="yourcompany.com"
                                             className="h-9 text-base md:text-sm pl-16"
                                         />
                                         <span className="text-muted-foreground pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm">
@@ -188,11 +188,11 @@ export default function InvoicingSection() {
                                     <Label htmlFor="social-media">Social Media</Label>
                                     <div className="relative">
                                         <Input
-                                        required
+                                            required
                                             id="social-media"
                                             name="social-media"
                                             type="url"
-                                            placeholder="instagram.com"
+                                            placeholder="instagram.com/yourprofile"
                                             className="h-9 text-base md:text-sm pl-16"
                                         />
                                         <span className="text-muted-foreground pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm">
@@ -202,8 +202,8 @@ export default function InvoicingSection() {
                                 </div>
 
                                 <div className="space-y-3">
-                                    <Label htmlFor="msg">Message</Label>
-                                    <Textarea id="msg" name="msg" rows={10} className="min-h-16 text-base md:text-sm" />
+                                    <Label htmlFor="msg">Your Message</Label>
+                                    <Textarea id="msg" name="msg" rows={6} className="min-h-16 text-base md:text-sm" placeholder="Tell us about your project or questions" />
                                 </div>
                                 
                                 <div className="grid gap-6 sm:grid-cols-[1fr_auto]">
@@ -217,26 +217,26 @@ export default function InvoicingSection() {
                                 </div>
                             </form>
                         </div>
-                        
-                        {/* Bottom Sections */}
+
+                        {/* Bottom Info Sections */}
                         <div className="row-span-2 grid grid-rows-subgrid gap-5 *:block max-lg:border-b">
                             <p className="text-muted-foreground text-balance">
-                                <strong className="text-foreground font-medium">99.9% Uptime guarantee</strong> ensured across all platforms.
+                                <strong className="text-foreground font-medium">99.9% Uptime Guarantee</strong> to ensure your site is always available.
                             </p>
                         </div>
                         <div className="row-span-2 grid grid-rows-subgrid gap-5 *:block max-lg:relative max-lg:border-b max-lg:border-r-0">
                             <p className="text-muted-foreground text-balance">
-                                <strong className="text-foreground font-medium">48-72 hour launch speed</strong> with AI features ready.
+                                <strong className="text-foreground font-medium">48-72 Hour Launch Speed</strong> with AI features ready from day one.
                             </p>
                         </div>
                         <div className="row-span-2 grid grid-rows-subgrid gap-5 *:block">
                             <p className="text-muted-foreground">
-                                <strong className="text-foreground font-medium">24/7 Support</strong> with dedicated account managers.
+                                <strong className="text-foreground font-medium">24/7 Dedicated Support</strong> including your own account manager.
                             </p>
                         </div>
                         <div className="row-span-2 grid grid-rows-subgrid gap-5 *:block">
                             <p className="text-muted-foreground text-balance">
-                                <strong className="text-foreground font-medium">Seamless Integration</strong> with industry-leading tools.
+                                <strong className="text-foreground font-medium">Seamless Integration</strong> with your existing systems and tools.
                             </p>
                         </div>
                     </div>

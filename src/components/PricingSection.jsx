@@ -73,11 +73,10 @@ export default function PricingWithChart() {
                         </div>
                         <div className="mx-auto max-w-2xl text-center ">
                             <h1 className="text-foreground text-balance text-3xl font-medium sm:text-5xl ">
-                                Pricing That Powers Your Growth
+                                Premium Patient Experiences at Transparent Pricing
                             </h1>
                             <p className="text-muted-foreground mx-auto mt-3   max-w-xl text-balance md:text-lg ">
-                                Choose a plan designed to fit your ambition—no surprises, no long-term lock-ins.
-
+                                Both plans deliver the trust-building, seamless experiences that modern patients expect. Choose what fits your practice goals.
 
                             </p>
 
@@ -99,13 +98,13 @@ export default function PricingWithChart() {
                         <div className="space-y-4">
                             <div>
                                 <h2 className="backdrop-blur-2 inline rounded-[2px] p-1 text-xl font-semibold">
-                                    Monthly Package
+                                    AI-Powered Plan
                                 </h2>
                                 <span className="my-3 block text-4xl relative bg-green-500  text-transparent bg-clip-text">
-                                    $99
+                                    $199/month
                                 </span>
                                 <p className="text-muted-foreground text-sm">
-                                    Ideal for small businesses getting started
+                                    For doctors ready to deliver exceptional experiences
 
                                 </p>
                             </div>
@@ -142,11 +141,11 @@ export default function PricingWithChart() {
 
                             <ul className="text-muted-foreground space-y-3 text-sm">
                                 {[
-                                    'Mobile-First Responsive Design',
-                                    'Instant Booking & Reservations',
-                                    'Lead Capture & Analytics Dashboard',
-                                    'Secure Hosting & Ongoing Maintenance',
-                                    '24/7 Customer Support',
+                                     'Everything in Essential Plan, plus:',
+                                    'AI Voice Assistant—answers calls with genuine warmth 24/7',
+                                    'AI Chat—proactive, intelligent, emotionally attuned',
+                                    'Custom AI training—speaks your specialty fluently',
+                                    'The advantage of making every patient feel truly understood',
                                 ].map((item, index) => (
                                     <li key={index} className="flex items-center gap-2">
                                         <CheckCircleIcon className="h-4 w-4 text-green-600" />
@@ -162,12 +161,12 @@ export default function PricingWithChart() {
                         {/* Pricing + Chart */}
                         <div className="flex flex-col justify-between space-y-6">
                             <div>
-                                <h2 className="text-xl font-semibold">AI Monthly Package</h2>
+                                <h2 className="text-xl font-semibold">Essential Plan</h2>
                                 <span className="my-3 block text-4xl relative bg-green-500  text-transparent bg-clip-text">
-                                    $199
+                                    $99/month
                                 </span>
                                 <p className="text-muted-foreground text-sm">
-                                    Perfect for growing businesses ready to scale
+                                    Everything needed for trust and effortless booking
                                 </p>
                             </div>
                             <div className="bg-muted/30 h-fit w-full rounded-2xl border p-2">
@@ -179,7 +178,7 @@ export default function PricingWithChart() {
                                         <CardTitle>Our Community Grew by 234 Businesses This Month
                                         </CardTitle>
                                         <CardDescription className='text-xs'>
-                                            Smart companies are making the switch to AI-powered websites—see why more businesses choose SuperWorld Technologies every day.
+                                            Smart companies are making the switch to AI-powered websites—see why more businesses choose patientflowai every day.
 
                                         </CardDescription>
                                     </CardBody>
@@ -192,18 +191,17 @@ export default function PricingWithChart() {
 
                             <ul className="text-muted-foreground mt-4 space-y-3 text-sm">
                                 {[
-                                    'AI-Powered Visual Search',
-                                    'AI Smart Recommendations',
-                                    'Automated Follow-Ups',
-                                    'AI-Powered Chatbot',
-                                    'Priority Access to New AI Tools',
-                                    'Custom AI Workflows & Integrations',
-                                    'Mobile-First Responsive Design',
-                                    'Instant Booking & Reservations',
-                                    'Lead Capture & Analytics Dashboard',
-                                    'Secure Hosting & Ongoing Maintenance',
-                                    '24/7 Customer Support',
-
+                                  'Clean, premium design that earns instant confidence',
+                                  'HIPAA-compliant hosting with visible trust badges',
+                                  'Lightning-fast performance (0.9-second mobile load)',
+                                  'Seamless appointment booking (45-second process)',
+                                  'Warm, instant confirmations—professional and caring',
+                                  'Automated gentle reminders—helpful, never annoying',
+                                  'Intuitive admin dashboard—beautifully simple',
+                                  'Patient testimonials—authentic trust-building',
+                                  'All technical maintenance—completely handled',
+                                  '24/7 support—real humans who care',
+                                  'Peace of mind knowing your site builds trust automatically',
                                 ].map((item, index) => (
                                     <li key={index} className="flex items-center gap-2">
                                         <CheckCircleIcon className="h-4 w-4 text-green-600" />
@@ -212,36 +210,7 @@ export default function PricingWithChart() {
                                 ))}
                             </ul>
 
-                            {/* Call to Action */}
-                            <div className="mt-10  w-full ">
-                                <a
-                                    href='/getstarted'
-                                    className="
-                                  bg-green-500  
-                                  inline-flex items-center   justify-center gap-2 whitespace-nowrap text-sm font-medium
-                                  transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring
-                                  disabled:pointer-events-none disabled:opacity-50
-                                  [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0
-                                  text-primary-foreground shadow-md  border  hover:bg-green-500/90
-                                  h-10 px-6 rounded-full group relative overflow-hidden
-                                "
-                                >
-                                    <span className="mr-6 transition-opacity duration-300 group-hover:opacity-0">
-                                        Get Started
-                                    </span>
-
-                                    <span
-                                        className="
-                                    absolute right-1 top-1 border shadow-inner shadow-white/30  border-green-500/50   bottom-1 rounded-full z-10 flex items-center justify-center
-                                    w-[22%] transition-all duration-300 bg-black
-                                    group-hover:w-[calc(100%-0.5rem)] group-active:scale-95
-                                  "
-                                        aria-hidden="true"
-                                    >
-                                        <ChevronRight className=' ml-0.5 ' />
-                                    </span>
-                                </a>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>

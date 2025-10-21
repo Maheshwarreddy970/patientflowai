@@ -10,8 +10,8 @@ const CTA = () => {
         <div className="grid grid-cols-6 gap-4 sm:grid-cols-8">
           {/* Text and CTA */}
           <div className="col-span-6 max-md:pb-6 sm:col-span-5 md:col-span-4 md:pt-6">
-            <h1 className="text-foreground text-balance text-5xl font-semibold sm:text-6xl">
-              Modern Solutions for Your
+            <h1 className="text-foreground text-balance text-4xl font-semibold sm:text-5xl">
+              Give Your Patients the Experience They Deserve—And Watch Your Practice
               {' '}
               <span className="relative ">
                 <svg
@@ -40,7 +40,7 @@ const CTA = () => {
                     </linearGradient>
                   </defs>
                 </svg>
-                <span className="relative bg-green-500 inline-block text-transparent bg-clip-text">Customers</span>
+                <span className="relative bg-green-500 inline-block text-transparent bg-clip-text">Thrive</span>
               </span>
             </h1>
             <p className="text-gray-600 mb-6 mt-4 text-balance text-lg">

@@ -6,7 +6,6 @@ import FeaturesSection from "@/components/Feature";
 import HeroSection from "@/components/Herosection";
 import PricingSection from "@/components/PricingSection";
 import Testimonials from "@/components/testimonials";
-import TrustedBySection from "@/components/TrustedBy";
 
 
 
@@ -157,10 +156,9 @@ export default function Home() {
   return (
     <>
       <HeroSection></HeroSection>
-      <TrustedBySection></TrustedBySection>
       <FeaturesSection></FeaturesSection>
       <Desgines TemplateDesigns={TemplateDesigns}></Desgines>
-      <ComparatorSection Logotext={"main"}></ComparatorSection>
+      <ComparatorSection ></ComparatorSection>
       <PricingSection></PricingSection>
       <Testimonials></Testimonials>
       <FAQSection></FAQSection>

@@ -3,59 +3,60 @@ import React from 'react';
 const testimonialsData = [
   {
     id: 1,
-    text: "Switching to SuperWorld transformed our workflow overnight. Our real estate site now matches 50% more buyers with properties in less than a minute.",
-    author: "Laura Chen",
-    title: "Broker, Chen Realty Group"
+    text: "Within one week of launching PatientFlowAI, three patients specifically mentioned how 'easy and professional' our website felt. One said: 'I almost went to another dentist, but your website made me trust you immediately.' That's the power of a seamless experience—it builds confidence before the first conversation. Our booking rate jumped 240%.",
+    author: "Dr. Sarah Mitchell",
+    title: "Family Dentist"
   },
   {
     id: 2,
-    text: "Our restaurant’s online orders have doubled since we added AI-driven menu recommendations and contactless ordering—all handled flawlessly by SuperWorld.",
-    author: "Diego Martinez",
-    title: "Owner, La Mercado Taqueria"
+    text: "A patient told me: 'Your website is the reason I chose you. It loaded instantly on my phone, everything was clear, and booking took literally 30 seconds. If you're that organized online, I knew you'd be excellent in person.' She was right. Seamless experiences don't just book appointments—they set expectations for the quality of care you deliver.",
+    author: "Dr. Marcus Williams",
+    title: "Orthodontist"
   },
   {
     id: 3,
-    text: "As a clinic director, I needed HIPAA compliance plus telehealth scheduling. SuperWorld delivered both within days, and patient no-shows dropped by 30%.",
-    author: "Dr. Priya Singh",
-    title: "Medical Director, Oakwood Family Care"
+    text: "Someone called at 2:30 AM in severe tooth pain. Our AI assistant responded with such warmth and immediately booked her for an emergency slot. She later said: 'I expected a robot. What I got was genuine compassion at my worst moment. That's when I knew I'd found my dentist for life.' The AI built trust I couldn't have built better myself.",
+    author: "Dr. Priya Sharma",
+    title: "Emergency Dentist"
   },
   {
     id: 4,
-    text: "Integrating AI-led vehicle search on our dealership site boosted test drive requests by 220%. The setup was seamless, and support is exceptional.",
-    author: "Carlos Rivera",
-    title: "General Manager, Cityline Auto"
+    text: "I track every metric. Before PatientFlowAI: 12% of website visitors booked appointments. After: 41% book. The difference? The experience is so clean, so intuitive, so friction-free that patients actually complete the journey. Every barrier removed means more people getting the care they need—and my practice thriving.",
+    author: "Dr. Jessica Martinez",
+    title: "Cosmetic Dentist"
   },
   {
     id: 5,
-    text: "For our home services business, the photo-based instant quotes feature cut our estimate cycle in half, leading to a 40% increase in booked jobs.",
-    author: "Jessica O’Neal",
-    title: "Owner, O’Neal Home Repairs"
+    text: "A mother wrote in a review: 'Booking my son's first therapy session was easier than ordering pizza. The website was so smooth I didn't have time to second-guess myself. Thank you for removing obstacles when we were already struggling.' That seamless experience got her son the help he needed. That's the real value—care happening because technology got out of the way.",
+    author: "Dr. Alan Cooper",
+    title: "Child Therapist"
   },
   {
     id: 6,
-    text: "Our waste management routes are now optimized automatically based on AI image sorting of materials—efficiency gains of over 35% have been realized.",
-    author: "Markus Schmidt",
-    title: "Operations Manager, GreenCycle Recycling"
+    text: "My old website embarrassed me. PatientFlowAI transformed it into something I'm proud to share. Existing patients texted me: 'Your new website looks incredible!' If people who already trust me were impressed, imagine first-time visitors. New patient bookings doubled in three weeks. Clean, premium design equals instant credibility.",
+    author: "Dr. Linda Park",
+    title: "Periodontist"
   },
   {
     id: 7,
-    text: "Adding AI visual search to our medical supplies catalog reduced search times by 75% and increased order accuracy—our clients love it.",
-    author: "Elena Petrova",
-    title: "COO, MedSupply Direct"
+    text: "The patient dashboard revealed that people were abandoning booking at the insurance question—they were confused and frustrated. I added a simple explainer video and live chat support. Abandonment dropped 67% overnight. When you see exactly where friction exists, you can eliminate it. That's how you optimize for trust and conversions simultaneously.",
+    author: "Dr. Robert Hayes",
+    title: "Implant Specialist"
   },
   {
     id: 8,
-    text: "In fitness, personalized class recommendations from AI lifted our membership conversions by 28%. SuperWorld’s dashboard makes tracking simple.",
-    author: "Brandon Lee",
-    title: "Director, Momentum Gym"
+    text: "A patient called from her car, crying about anxiety. She'd visited four therapist websites and given up on each—too confusing, too overwhelming. Ours loaded instantly, spoke to her gently, and booked her in under a minute. She said: 'Your website was the first thing today that didn't make me feel more anxious. It gave me hope.' When design respects mental state, healing begins immediately.",
+    author: "Dr. Michelle Chang",
+    title: "Anxiety Specialist"
   },
   {
     id: 9,
-    text: "As a boutique retailer, the AI-driven style matcher elevated our online experience, tripling our average session duration and boosting sales by 45%.",
-    author: "Sofia Alvarez",
-    title: "Founder, Chic & Unique Boutique"
+    text: "Someone explored our root canal page nine times over two weeks—clearly terrified but needing help. The AI sent a gentle message: 'Dental procedures can feel scary. Would a quick call to discuss your concerns help? Zero pressure, just answers.' He called. Booked. Later told me that respectful nudge gave him courage. That's emotional intelligence creating trust that converts.",
+    author: "Dr. Steven Rodriguez",
+    title: "Endodontist"
   }
 ];
+
 
 
 export default function Testimonials() {
