@@ -17,45 +17,47 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "SuperWorld Technologies - AI-Powered Websites for Every Industry",
-  description: "Transform your business with AI-powered websites. Industry-specific solutions for car dealerships, restaurants, real estate, healthcare, home services & waste management. Launch in 48-72 hours.",
+  title: "PatientFlowAI - Trusted AI-Powered Websites for Healthcare & More",
+  description: "Transform your healthcare business with PatientFlowAI’s trusted AI-powered websites. Deliver seamless patient experiences, industry-specific solutions, and rapid launch times. Build trust and increase patient engagement with secure, custom websites launching in 48-72 hours.",
   openGraph: {
-    title: "SuperWorld Technologies - AI-Powered Websites for Every Industry",
-    description: "Transform your business with AI-powered websites. Industry-specific solutions for car dealerships, restaurants, real estate, healthcare, home services & waste management. Launch in 48-72 hours.",
-    url: "www.superworldtechnologies.com",
-    siteName: "SuperWorld Technologies",
-    images: [{
-      url: "https://www.superworldtechnologies.com/thumbnail.png",
-      width: 1200,
-      height: 630,
-      alt: "SuperWorld Technologies - AI-Powered Business Solutions",
-    }],
+    title: "PatientFlowAI - Trusted AI-Powered Websites for Healthcare & More",
+    description: "Transform your healthcare business with PatientFlowAI’s trusted AI-powered websites. Deliver seamless patient experiences, industry-specific solutions, and rapid launch times. Build trust and increase patient engagement with secure, custom websites launching in 48-72 hours.",
+    url: "https://www.patientflowai.com",
+    siteName: "PatientFlowAI",
+    images: [
+      {
+        url: "https://patientflowai.superworldtechnologies.com/Screenshot2025-10-21185522.png",
+        width: 1200,
+        height: 630,
+        alt: "PatientFlowAI - AI-Powered Healthcare Website Solutions",
+      },
+    ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SuperWorld Technologies - AI-Powered Websites for Every Industry",
-    description: "Transform your business with AI-powered websites. Industry-specific solutions for car dealerships, restaurants, real estate, healthcare, home services & waste management. Launch in 48-72 hours.",
-    images: ["https://www.superworldtechnologies.com/thumbnail.png"],
+    title: "PatientFlowAI - AI-Powered Healthcare Websites That Build Trust",
+    description: "Deliver seamless, AI-powered healthcare websites with PatientFlowAI. Trusted by providers to launch fast, increase patient engagement, and offer secure, industry-specific solutions.",
+    images: ["https://patientflowai.superworldtechnologies.com/Screenshot2025-10-21185522.png"],
   },
-}
+};
 
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/icon0.svg" type="image/svg+xml" />
-        <link rel="icon" href="/icon1.png" type="image/png" sizes="32x32" />
-        <link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180" />
+        <link rel="icon" href="/favicon-16x16.png" type="image/svg+xml" />
+        <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-              <Header ></Header>
+        <Header ></Header>
 
         {children}
-              <Footer ></Footer>
+        <Footer ></Footer>
 
         <SpeedInsights />
         <Analytics />
