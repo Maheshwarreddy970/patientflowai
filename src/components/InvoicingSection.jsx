@@ -91,7 +91,7 @@ export default function FreeDemoRequestSection() {
                     className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -bottom-[3.5px] -right-[3.5px]"
                 />
                 <div className="relative">
-                    <div className="grid grid-cols-2 divide-x border-y *:p-6 md:*:p-8 lg:grid-cols-4">
+                    <div className="grid grid-cols-2 divide-x border-y *:p-3 md:*:p-8 lg:grid-cols-4">
                         {/* Left Section */}
                         <div className="col-span-2 border-b max-lg:border-r-0 max-md:text-center">
                             <h1 className="text-balance text-2xl font-semibold md:text-4xl">
