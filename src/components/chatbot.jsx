@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState, useRef, useEffect } from 'react'
-import VoiceAnimation from './ui/voiceanimation'
 import { Input } from './ui/input'
 import ConversationDemo from './chat'
 import { CornerRightUp } from 'lucide-react'
@@ -194,7 +193,7 @@ export default function Chatbot() {
         : 'initializing'
 
     return (
-        <div className="relative h-[80vh] w-[60vh] bg-green-100   shadow-inner p-2 mx-auto border-x">
+        <div className="relative h-[80vh] w-full md:w-[60vh] bg-green-100   shadow-inner p-2 mx-auto border-x">
             <div
                 aria-hidden="true"
                 className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-1.5 border border-transparent shadow-sm ring-1 -left-[3.5px] -top-[3.5px]"
@@ -249,9 +248,9 @@ export default function Chatbot() {
                         <button 
                             onClick={handleSendMessage}
                             disabled={isGrokLoading || connecting}
-                            className='flex absolute right-0.5 overflow-hidden justify-center p-1 items-center h-full'
+                            className='flex absolute right-0.5 w-10  overflow-hidden justify-center p-1 items-center h-full'
                         >
-                            <CornerRightUp className='border p-1.5 rounded-full h-full w-full bg-neutral-100 shadow-sm' />
+                            <CornerRightUp className='border p-1.5 rounded-full h-full w-10 bg-neutral-100 shadow-sm' />
                         </button>
                     </button>
                 </div>

@@ -169,7 +169,7 @@ const FeaturesSection = () => {
                 aria-hidden="true"
                 className="bg-card ring-foreground/10 pointer-events-none absolute z-10 size-[6px] border border-transparent shadow-sm ring-1 -right-[3.5px] -bottom-[3.5px]"
               />
-              <div className="*:nth-3:border-r @max-3xl:*:nth-[1n+1]:nth-[-n+6]:border-b @3xl:*:nth-6:border-r @3xl:*:nth-[1n+3]:nth-[-n+4]:border-r @3xl:*:nth-[1n+1]:nth-[-n+5]:border-b border-foreground/10 divide-foreground/10 grid-cols-4 @3xl:*:first:border-r relative grid overflow-hidden border border-b-0 *:p-8">
+              <div className="*:nth-3:border-r @max-3xl:*:nth-[1n+1]:nth-[-n+6]:border-b @3xl:*:nth-6:border-r @3xl:*:nth-[1n+3]:nth-[-n+4]:border-r @3xl:*:nth-[1n+1]:nth-[-n+5]:border-b border-foreground/10 divide-foreground/10 grid-cols-4 @3xl:*:first:border-r relative grid overflow-hidden border border-b-0 *:p-3 md:*:p-8">
                 {/* Get a Modern Website—Free & Fully Managed */}
                 <div className="col-span-4 grid-cols-2 bg-white gap-8 border-b grid">
                   <div className="col-span-2 text-center mb-4">
@@ -232,7 +232,7 @@ const FeaturesSection = () => {
                         </div>
                         <div
                           className={`rounded-(--radius) ${index === 0 ? 'bg-black/5 border  shadow ring-foreground/5' : 'bg-green-500 shadow inset-ring-foreground/10 inset-ring-1'
-                            } mt-1.5 w-3/5 rounded-${index === 0 ? 'tl' : 'br'} p-3 text-xs ${index === 1 ? 'ml-auto text-white shadow shadow-black/15' : ''
+                            } mt-1.5 w-[80%] md:w-3/5 rounded-${index === 0 ? 'tl' : 'br'} p-3 text-xs ${index === 1 ? 'ml-auto text-white shadow shadow-black/15' : ''
                             }`}
                         >
                           {chat.message}
