@@ -1,76 +1,116 @@
 import { Cpu, MoveRight, Sparkles } from 'lucide-react'
-import { HealthLogo } from './logo';
+import { HealthLogo, Nexhealth } from './logo';
 
 
 
 const tableData = [
-  {
-    feature: 'Patient Trust (First 3 Seconds)',
-    diy_in_house: 'Low—outdated design triggers skepticism',
-    patientflowai: 'High—premium design creates instant confidence',
-    other_saas: 'Medium—generic templates feel impersonal',
-  },
-  {
-    feature: 'Mobile Booking Experience',
-    diy_in_house: 'Broken, frustrating—patients give up',
-    patientflowai: '✅ Flawless, 45 seconds—effortless flow',
-    other_saas: 'Clunky, requires patience—creates friction',
-  },
-  {
-    feature: 'Patient Emotional Experience',
-    diy_in_house: 'Anxiety from confusion and poor UX',
-    patientflowai: '✅ Relief from intuitive, caring design',
-    other_saas: 'Neutral—functional but uninspiring',
-  },
-  {
-    feature: 'Trust Badges & Security',
-    diy_in_house: 'Missing or hidden—patients feel unsafe',
-    patientflowai: '✅ Prominent HIPAA/SSL seals—feel protected',
-    other_saas: 'Basic SSL only—minimal reassurance',
-  },
-  {
-    feature: 'AI Response Quality',
-    diy_in_house: 'None—voicemail feels abandoning',
-    patientflowai: '✅ Warm, intelligent—feels genuinely caring',
-    other_saas: 'Robotic chatbot—feels impersonal and frustrating',
-  },
-  {
-    feature: 'After-Hours Availability',
-    diy_in_house: 'Dead silence—patients feel ignored',
-    patientflowai: '✅ Immediate compassionate response—valued 24/7',
-    other_saas: 'Generic auto-reply—impersonal',
-  },
-  {
-    feature: 'Visual Cleanliness',
-    diy_in_house: 'Cluttered, overwhelming—hard to navigate',
-    patientflowai: '✅ Clean, organized—effortless to use',
-    other_saas: 'Busy templates—generic and forgettable',
-  },
-  {
-    feature: 'Booking Confidence Level',
-    diy_in_house: 'Low—friction creates abandonment',
-    patientflowai: '✅ High—seamless process builds certainty',
-    other_saas: 'Medium—functional but uninspiring',
-  },
-  {
-    feature: 'Perceived Doctor Quality',
-    diy_in_house: '"Website is bad, care must be too"—lost trust',
-    patientflowai: '"This excellence means excellent care"—strong trust',
-    other_saas: '"Probably average practice"—neutral',
-  },
-  {
-    feature: 'Patient Loyalty & Referrals',
-    diy_in_house: 'Low—no emotional connection',
-    patientflowai: '✅ High—seamless experience creates advocates',
-    other_saas: 'Low—interchangeable with others',
-  },
-  {
-    feature: 'Load Speed',
-    diy_in_house: '8+ seconds—patients leave immediately',
-    patientflowai: '✅ 0.8 seconds—instant, impressive',
-    other_saas: '3-5 seconds—acceptable, not premium',
-  },
+    {
+        feature: 'Patient Trust (First 3 Seconds)',
+        nexhealth: 'Medium—generic practice management portal feel',
+        patientflowai: '✅ High—premium website design creates instant confidence',
+    },
+    {
+        feature: 'Primary Focus',
+        nexhealth: 'Backend practice management & scheduling tool',
+        patientflowai: '✅ Patient-facing experience & conversion optimization',
+    },
+    {
+        feature: 'Website Design & Branding',
+        nexhealth: 'Widget embeds only—relies on your existing website',
+        patientflowai: '✅ Complete premium custom website built for you',
+    },
+    {
+        feature: 'Mobile Booking Experience',
+        nexhealth: 'Functional scheduling widget—requires navigation',
+        patientflowai: '✅ Flawless full-site experience—45 seconds booking',
+    },
+    {
+        feature: 'AI Assistant Quality',
+        nexhealth: 'Automated texts/emails—transactional messaging',
+        patientflowai: '✅ Conversational AI—warm, intelligent, empathetic responses',
+    },
+    {
+        feature: 'After-Hours Patient Support',
+        nexhealth: 'Automated reminders only—no interactive support',
+        patientflowai: '✅ 24/7 AI chat—immediate compassionate responses',
+    },
+    {
+        feature: 'Patient Emotional Experience',
+        nexhealth: 'Efficient but clinical—practice-centric tools',
+        patientflowai: '✅ Relief & confidence—patient-centric design',
+    },
+    {
+        feature: 'Visual Patient Journey',
+        nexhealth: 'Embedded widgets on existing site—disconnected',
+        patientflowai: '✅ Seamless end-to-end branded experience',
+    },
+    {
+        feature: 'Load Speed (Patient-Facing)',
+        nexhealth: '3-5 seconds—widget loads after main site',
+        patientflowai: '✅ 0.8 seconds—instant, impressive first impression',
+    },
+    {
+        feature: 'Trust Signals & Security Display',
+        nexhealth: 'HIPAA compliant (backend)—not prominently shown to patients',
+        patientflowai: '✅ Prominent HIPAA/SSL badges—patients feel protected',
+    },
+    {
+        feature: 'Booking Abandonment Rate',
+        nexhealth: 'Higher—multi-step widget process creates friction',
+        patientflowai: '✅ 80% lower—one-tap seamless flow',
+    },
+    {
+        feature: 'Patient Conversion Focus',
+        nexhealth: 'Not primary goal—built for practice efficiency',
+        patientflowai: '✅ Core mission—68% average conversion rate',
+    },
+    {
+        feature: 'Setup Complexity',
+        nexhealth: 'Complex—requires IT setup, integrations, training',
+        patientflowai: '✅ Turnkey—launched in 72 hours, fully managed',
+    },
+    {
+        feature: 'Price for Small Practices',
+        nexhealth: '$500-1500/month (multiple modules required)',
+        patientflowai: '✅ $199/month all-inclusive—transparent pricing',
+    },
+    {
+        feature: 'Contract Terms',
+        nexhealth: 'Annual contracts—commitment required',
+        patientflowai: '✅ Month-to-month—cancel anytime flexibility',
+    },
+    {
+        feature: 'Website Included',
+        nexhealth: '❌ No—only widgets for existing site',
+        patientflowai: '✅ Yes—premium custom website built for you',
+    },
+    {
+        feature: 'SEO & Patient Discovery',
+        nexhealth: 'Not included—relies on your existing site',
+        patientflowai: '✅ Built-in SEO optimization for patient acquisition',
+    },
+    {
+        feature: 'Perceived Doctor Quality',
+        nexhealth: '"Standard practice management"—neutral impression',
+        patientflowai: '✅ "Premium care provider"—strong trust & credibility',
+    },
+    {
+        feature: 'Patient Loyalty & Referrals',
+        nexhealth: 'Low emotional connection—transactional tool',
+        patientflowai: '✅ High—seamless experience creates advocates',
+    },
+    {
+        feature: 'New Patient Acquisition',
+        nexhealth: 'Not designed for—focuses on existing patients',
+        patientflowai: '✅ Primary strength—converts 68% of visitors',
+    },
+    {
+        feature: 'Ideal For',
+        nexhealth: 'Large multi-location practices needing backend automation',
+        patientflowai: '✅ Individual providers & small practices wanting growth',
+    },
 ];
+
 
 
 export default function PricingComparator() {
@@ -162,8 +202,7 @@ export default function PricingComparator() {
 
                                     </th>
                                     <th className="space-y-3">
-                                        <span className="block">SaaS Platforms</span>
-
+                                        <Nexhealth className="h-full w-full flex justify-center  items-center  bg-white" />
                                     </th>
                                 </tr>
                             </thead>
@@ -219,7 +258,7 @@ export default function PricingComparator() {
                                             </div>
                                         </td>
                                         <td>
-                                            {row.other_saas === true ? (
+                                            {row.nexhealth === true ? (
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     viewBox="0 0 24 24"
@@ -232,7 +271,7 @@ export default function PricingComparator() {
                                                     />
                                                 </svg>
                                             ) : (
-                                                row.other_saas
+                                                row.nexhealth
                                             )}
                                         </td>
                                     </tr>
