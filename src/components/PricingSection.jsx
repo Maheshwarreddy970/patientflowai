@@ -101,7 +101,7 @@ export default function PricingWithChart() {
                                     AI-Powered Plan
                                 </h2>
                                 <span className="my-3 block text-4xl relative bg-green-500  text-transparent bg-clip-text">
-                                    $199/month
+                                    $299/month
                                 </span>
                                 <p className="text-muted-foreground text-sm">
                                     For doctors ready to deliver exceptional experiences
@@ -141,7 +141,7 @@ export default function PricingWithChart() {
 
                             <ul className="text-muted-foreground space-y-3 text-sm">
                                 {[
-                                     'Everything in Essential Plan, plus:',
+                                    'Everything in Essential Plan, plus:',
                                     'AI Voice Assistant—answers calls with genuine warmth 24/7',
                                     'AI Chat—proactive, intelligent, emotionally attuned',
                                     'Custom AI training—speaks your specialty fluently',
@@ -163,7 +163,7 @@ export default function PricingWithChart() {
                             <div>
                                 <h2 className="text-xl font-semibold">Essential Plan</h2>
                                 <span className="my-3 block text-4xl relative bg-green-500  text-transparent bg-clip-text">
-                                    $99/month
+                                    $199/month
                                 </span>
                                 <p className="text-muted-foreground text-sm">
                                     Everything needed for trust and effortless booking
@@ -191,17 +191,17 @@ export default function PricingWithChart() {
 
                             <ul className="text-muted-foreground mt-4 space-y-3 text-sm">
                                 {[
-                                  'Clean, premium design that earns instant confidence',
-                                  'HIPAA-compliant hosting with visible trust badges',
-                                  'Lightning-fast performance (0.9-second mobile load)',
-                                  'Seamless appointment booking (45-second process)',
-                                  'Warm, instant confirmations—professional and caring',
-                                  'Automated gentle reminders—helpful, never annoying',
-                                  'Intuitive admin dashboard—beautifully simple',
-                                  'Patient testimonials—authentic trust-building',
-                                  'All technical maintenance—completely handled',
-                                  '24/7 support—real humans who care',
-                                  'Peace of mind knowing your site builds trust automatically',
+                                    'Clean, premium design that earns instant confidence',
+                                    'HIPAA-compliant hosting with visible trust badges',
+                                    'Lightning-fast performance (0.9-second mobile load)',
+                                    'Seamless appointment booking (45-second process)',
+                                    'Warm, instant confirmations—professional and caring',
+                                    'Automated gentle reminders—helpful, never annoying',
+                                    'Intuitive admin dashboard—beautifully simple',
+                                    'Patient testimonials—authentic trust-building',
+                                    'All technical maintenance—completely handled',
+                                    '24/7 support—real humans who care',
+                                    'Peace of mind knowing your site builds trust automatically',
                                 ].map((item, index) => (
                                     <li key={index} className="flex items-center gap-2">
                                         <CheckCircleIcon className="h-4 w-4 text-green-600" />
@@ -210,7 +210,7 @@ export default function PricingWithChart() {
                                 ))}
                             </ul>
 
-                           
+
                         </div>
                     </div>
                 </div>

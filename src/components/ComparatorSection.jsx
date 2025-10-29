@@ -72,7 +72,7 @@ const tableData = [
     {
         feature: 'Price for Small Practices',
         nexhealth: '$500-1500/month (multiple modules required)',
-        patientflowai: '✅ $199/month all-inclusive—transparent pricing',
+        patientflowai: '✅ $299/month all-inclusive—transparent pricing',
     },
     {
         feature: 'Contract Terms',
